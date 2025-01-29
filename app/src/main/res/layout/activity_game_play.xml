@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16sp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 sec"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp" />
+    <TextView
+        android:id="@+id/tvNumOfQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00 + 00 = ?"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etPlayerAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:background="@drawable/rounded_border"/>
+
+    <Button
+        android:id="@+id/btDone"
+        android:onClick="Done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="DONE"
+        android:background="@drawable/button_rounded_border"/>
+    <TextView
+        android:id="@+id/tvCorretOrWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WRONG!"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvShowAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer is 0!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btToNextQuestion"
+        android:onClick="toNextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT QUESTION"
+        android:background="@drawable/button_rounded_border"/>
+</LinearLayout>

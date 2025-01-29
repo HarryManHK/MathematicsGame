@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16sp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/logo_no_background" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathematic Game"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="PLAY"
+        android:background="@drawable/button_rounded_border"
+        android:textStyle="bold"
+        android:onClick="play"/>
+
+    <Button
+        android:id="@+id/btRanking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="GAME RANKING"
+        android:textStyle="bold"
+        android:background="@drawable/button_rounded_border"
+        android:onClick="gameRanking"/>
+
+    <Button
+        android:id="@+id/btYourRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR RECORDS"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_rounded_border"
+        android:onClick="yourRecord"/>
+
+    <Button
+        android:id="@+id/btClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:textStyle="bold"
+        android:background="@drawable/button_rounded_border"
+        android:onClick="close"/>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16sp"
+    tools:context=".GameResult"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvGRFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="40sp"
+        android:text="Finish!"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Correct: 0, Wrong: 0!"
+        android:paddingBottom="40sp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Time: 0 sec"
+        android:paddingBottom="40sp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/btContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="CONTINUE"
+        android:layout_marginBottom="10dp"
+        android:onClick="Continue"
+        android:background="@drawable/button_rounded_border"/>
+    <Button
+        android:id="@+id/btBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Back To Menu"
+        android:onClick="BackToMenu"
+        android:background="@drawable/button_rounded_border"/>
+</LinearLayout>
