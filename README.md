@@ -1,2 +1,2 @@
 # MathematicsGame
-This is a assignment of Android app mathematics game.
+This is an assignment of Android app mathematics game.
